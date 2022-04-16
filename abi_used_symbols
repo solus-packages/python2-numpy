@@ -90,8 +90,6 @@ UNKNOWN:floor
 UNKNOWN:fmod
 UNKNOWN:fmodf
 UNKNOWN:fmodl
-UNKNOWN:hypot
-UNKNOWN:hypotf
 UNKNOWN:hypotl
 UNKNOWN:log10
 UNKNOWN:log10f
@@ -124,7 +122,9 @@ UNKNOWN:tanl
 ld-linux-x86-64.so.2:__tls_get_addr
 libc.so.6:__ctype_b_loc
 libc.so.6:__ctype_tolower_loc
+libc.so.6:__errno_location
 libc.so.6:__fprintf_chk
+libc.so.6:__fread_chk
 libc.so.6:__isoc99_fscanf
 libc.so.6:__isoc99_sscanf
 libc.so.6:__longjmp_chk
@@ -139,6 +139,7 @@ libc.so.6:_setjmp
 libc.so.6:backtrace
 libc.so.6:calloc
 libc.so.6:clock
+libc.so.6:dladdr
 libc.so.6:fallocate
 libc.so.6:fclose
 libc.so.6:fdopen
@@ -163,6 +164,7 @@ libc.so.6:ldexpf
 libc.so.6:ldexpl
 libc.so.6:localeconv
 libc.so.6:localtime_r
+libc.so.6:lseek64
 libc.so.6:madvise
 libc.so.6:malloc
 libc.so.6:memchr
@@ -193,7 +195,6 @@ libc.so.6:strtoll
 libc.so.6:strtoull
 libc.so.6:time
 libc.so.6:ungetc
-libdl.so.2:dladdr
 libm.so.6:acos
 libm.so.6:acosf
 libm.so.6:acosh
@@ -392,8 +393,6 @@ libopenblas.so.0:zgetrf_
 libopenblas.so.0:zheevd_
 libopenblas.so.0:zpotrf_
 libopenblas.so.0:zungqr_
-libpthread.so.0:__errno_location
-libpthread.so.0:lseek64
 libpython2.7.so.1.0:PyArg_ParseTuple
 libpython2.7.so.1.0:PyArg_ParseTupleAndKeywords
 libpython2.7.so.1.0:PyArg_UnpackTuple
